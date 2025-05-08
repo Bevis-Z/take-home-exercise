@@ -69,7 +69,7 @@ java -jar target/mongodb-1.0-SNAPSHOT.jar ../kitchensink frontend/public/data
 5. Run the frontend for further visualisation
 ```
 npm install
-npm start dev
+npm run dev
 ```
 Parameters:
 - `<path-to-java-project>`: Path to the root of the Java project to analyze (defaults to "kitchensink")
