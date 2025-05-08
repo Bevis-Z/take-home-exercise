@@ -1,0 +1,4941 @@
+{
+  "classes" : [ {
+    "id" : "org.jboss.as.quickstarts.kitchensink.util.Resources",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.util.Resources",
+    "simpleName" : "Resources",
+    "packageName" : "org.jboss.as.quickstarts.kitchensink.util",
+    "unused" : false,
+    "framework" : true,
+    "test" : false,
+    "dependsOn" : [ {
+      "target" : "jakarta.persistence.EntityManager",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.enterprise.inject.spi.InjectionPoint",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.reflect.Member",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.Class",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.util.logging.Logger",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.persistence.PersistenceContext",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.enterprise.inject.Produces",
+      "type" : "REFERENCE"
+    } ],
+    "usedImports" : [ {
+      "name" : "jakarta.persistence.EntityManager",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.enterprise.inject.spi.InjectionPoint",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.reflect.Member",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.Class",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.util.logging.Logger",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.persistence.PersistenceContext",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.enterprise.inject.Produces",
+      "type" : "IMPORT"
+    } ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.persistence.EntityManager",
+    "fullName" : "jakarta.persistence.EntityManager",
+    "simpleName" : "EntityManager",
+    "packageName" : "jakarta.persistence",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.enterprise.inject.spi.InjectionPoint",
+    "fullName" : "jakarta.enterprise.inject.spi.InjectionPoint",
+    "simpleName" : "InjectionPoint",
+    "packageName" : "jakarta.enterprise.inject.spi",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.util.logging.Logger",
+    "fullName" : "java.util.logging.Logger",
+    "simpleName" : "Logger",
+    "packageName" : "java.util.logging",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.persistence.PersistenceContext",
+    "fullName" : "jakarta.persistence.PersistenceContext",
+    "simpleName" : "PersistenceContext",
+    "packageName" : "jakarta.persistence",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.enterprise.inject.Produces",
+    "fullName" : "jakarta.enterprise.inject.Produces",
+    "simpleName" : "Produces",
+    "packageName" : "jakarta.enterprise.inject",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.lang.Class",
+    "fullName" : "java.lang.Class",
+    "simpleName" : "Class",
+    "packageName" : "java.lang",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.lang.reflect.Member",
+    "fullName" : "java.lang.reflect.Member",
+    "simpleName" : "Member",
+    "packageName" : "java.lang.reflect",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController",
+    "simpleName" : "MemberController",
+    "packageName" : "org.jboss.as.quickstarts.kitchensink.controller",
+    "unused" : false,
+    "framework" : true,
+    "test" : false,
+    "dependsOn" : [ {
+      "target" : "java.lang.Throwable",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.faces.application.FacesMessage",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.enterprise.inject.Model",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.annotation.PostConstruct",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.faces.context.FacesContext",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.String",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.inject.Inject",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.enterprise.inject.Produces",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.Exception",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.inject.Named",
+      "type" : "REFERENCE"
+    } ],
+    "usedImports" : [ {
+      "name" : "java.lang.Throwable",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.faces.application.FacesMessage",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.annotation.PostConstruct",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.faces.context.FacesContext",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.Exception",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.enterprise.inject.Model",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.String",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.inject.Inject",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.enterprise.inject.Produces",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.inject.Named",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController",
+      "type" : "IMPORT"
+    } ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration",
+    "simpleName" : "MemberRegistration",
+    "packageName" : "org.jboss.as.quickstarts.kitchensink.service",
+    "unused" : false,
+    "framework" : true,
+    "test" : true,
+    "dependsOn" : [ {
+      "target" : "jakarta.enterprise.event.Event",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.persistence.EntityManager",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.ejb.Stateless",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.util.logging.Logger",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.inject.Inject",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.Exception",
+      "type" : "REFERENCE"
+    } ],
+    "usedImports" : [ {
+      "name" : "jakarta.enterprise.event.Event",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.persistence.EntityManager",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.ejb.Stateless",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.util.logging.Logger",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.inject.Inject",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.Exception",
+      "type" : "IMPORT"
+    } ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.faces.application.FacesMessage",
+    "fullName" : "jakarta.faces.application.FacesMessage",
+    "simpleName" : "FacesMessage",
+    "packageName" : "jakarta.faces.application",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.enterprise.inject.Model",
+    "fullName" : "jakarta.enterprise.inject.Model",
+    "simpleName" : "Model",
+    "packageName" : "jakarta.enterprise.inject",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.annotation.PostConstruct",
+    "fullName" : "jakarta.annotation.PostConstruct",
+    "simpleName" : "PostConstruct",
+    "packageName" : "jakarta.annotation",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.faces.context.FacesContext",
+    "fullName" : "jakarta.faces.context.FacesContext",
+    "simpleName" : "FacesContext",
+    "packageName" : "jakarta.faces.context",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.inject.Inject",
+    "fullName" : "jakarta.inject.Inject",
+    "simpleName" : "Inject",
+    "packageName" : "jakarta.inject",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+    "simpleName" : "Member",
+    "packageName" : "org.jboss.as.quickstarts.kitchensink.model",
+    "unused" : false,
+    "framework" : true,
+    "test" : true,
+    "dependsOn" : [ {
+      "target" : "jakarta.persistence.Entity",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.validation.constraints.Pattern",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.validation.constraints.Email",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.validation.constraints.Size",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.as.quickstarts.kitchensink.model.SuppressWarnings",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.persistence.Id",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.validation.constraints.NotNull",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.persistence.GeneratedValue",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.validation.constraints.Digits",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.persistence.Table",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.io.Serializable",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.persistence.Column",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.Long",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.persistence.UniqueConstraint",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.validation.constraints.NotEmpty",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.xml.bind.annotation.XmlRootElement",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.String",
+      "type" : "REFERENCE"
+    } ],
+    "usedImports" : [ {
+      "name" : "jakarta.persistence.Entity",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.validation.constraints.Pattern",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.model.SuppressWarnings",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.validation.constraints.Size",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.validation.constraints.Email",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.persistence.Id",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.persistence.GeneratedValue",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.validation.constraints.NotNull",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.persistence.Table",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.validation.constraints.Digits",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.io.Serializable",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.persistence.Column",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.Long",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.persistence.UniqueConstraint",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.validation.constraints.NotEmpty",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.xml.bind.annotation.XmlRootElement",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.String",
+      "type" : "IMPORT"
+    } ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.inject.Named",
+    "fullName" : "jakarta.inject.Named",
+    "simpleName" : "Named",
+    "packageName" : "jakarta.inject",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.lang.Exception",
+    "fullName" : "java.lang.Exception",
+    "simpleName" : "Exception",
+    "packageName" : "java.lang",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.lang.String",
+    "fullName" : "java.lang.String",
+    "simpleName" : "String",
+    "packageName" : "java.lang",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.lang.Throwable",
+    "fullName" : "java.lang.Throwable",
+    "simpleName" : "Throwable",
+    "packageName" : "java.lang",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.persistence.Entity",
+    "fullName" : "jakarta.persistence.Entity",
+    "simpleName" : "Entity",
+    "packageName" : "jakarta.persistence",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.validation.constraints.Pattern",
+    "fullName" : "jakarta.validation.constraints.Pattern",
+    "simpleName" : "Pattern",
+    "packageName" : "jakarta.validation.constraints",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.validation.constraints.Email",
+    "fullName" : "jakarta.validation.constraints.Email",
+    "simpleName" : "Email",
+    "packageName" : "jakarta.validation.constraints",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.validation.constraints.Size",
+    "fullName" : "jakarta.validation.constraints.Size",
+    "simpleName" : "Size",
+    "packageName" : "jakarta.validation.constraints",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.persistence.Id",
+    "fullName" : "jakarta.persistence.Id",
+    "simpleName" : "Id",
+    "packageName" : "jakarta.persistence",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.validation.constraints.NotNull",
+    "fullName" : "jakarta.validation.constraints.NotNull",
+    "simpleName" : "NotNull",
+    "packageName" : "jakarta.validation.constraints",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.persistence.GeneratedValue",
+    "fullName" : "jakarta.persistence.GeneratedValue",
+    "simpleName" : "GeneratedValue",
+    "packageName" : "jakarta.persistence",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.validation.constraints.Digits",
+    "fullName" : "jakarta.validation.constraints.Digits",
+    "simpleName" : "Digits",
+    "packageName" : "jakarta.validation.constraints",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.persistence.Table",
+    "fullName" : "jakarta.persistence.Table",
+    "simpleName" : "Table",
+    "packageName" : "jakarta.persistence",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.io.Serializable",
+    "fullName" : "java.io.Serializable",
+    "simpleName" : "Serializable",
+    "packageName" : "java.io",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.persistence.Column",
+    "fullName" : "jakarta.persistence.Column",
+    "simpleName" : "Column",
+    "packageName" : "jakarta.persistence",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.persistence.UniqueConstraint",
+    "fullName" : "jakarta.persistence.UniqueConstraint",
+    "simpleName" : "UniqueConstraint",
+    "packageName" : "jakarta.persistence",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.validation.constraints.NotEmpty",
+    "fullName" : "jakarta.validation.constraints.NotEmpty",
+    "simpleName" : "NotEmpty",
+    "packageName" : "jakarta.validation.constraints",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.xml.bind.annotation.XmlRootElement",
+    "fullName" : "jakarta.xml.bind.annotation.XmlRootElement",
+    "simpleName" : "XmlRootElement",
+    "packageName" : "jakarta.xml.bind.annotation",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.lang.Long",
+    "fullName" : "java.lang.Long",
+    "simpleName" : "Long",
+    "packageName" : "java.lang",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.as.quickstarts.kitchensink.model.SuppressWarnings",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.model.SuppressWarnings",
+    "simpleName" : "SuppressWarnings",
+    "packageName" : "org.jboss.as.quickstarts.kitchensink.model",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.enterprise.event.Event",
+    "fullName" : "jakarta.enterprise.event.Event",
+    "simpleName" : "Event",
+    "packageName" : "jakarta.enterprise.event",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.ejb.Stateless",
+    "fullName" : "jakarta.ejb.Stateless",
+    "simpleName" : "Stateless",
+    "packageName" : "jakarta.ejb",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer",
+    "simpleName" : "MemberListProducer",
+    "packageName" : "org.jboss.as.quickstarts.kitchensink.data",
+    "unused" : false,
+    "framework" : true,
+    "test" : false,
+    "dependsOn" : [ {
+      "target" : "java.util.List",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.enterprise.event.Observes",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.annotation.PostConstruct",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.enterprise.event.Reception",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.inject.Inject",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.enterprise.context.RequestScoped",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.enterprise.inject.Produces",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.inject.Named",
+      "type" : "REFERENCE"
+    } ],
+    "usedImports" : [ {
+      "name" : "java.util.List",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.enterprise.event.Observes",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.annotation.PostConstruct",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.enterprise.event.Reception",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.inject.Inject",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.enterprise.context.RequestScoped",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.enterprise.inject.Produces",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.inject.Named",
+      "type" : "IMPORT"
+    } ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.util.List",
+    "fullName" : "java.util.List",
+    "simpleName" : "List",
+    "packageName" : "java.util",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.enterprise.event.Observes",
+    "fullName" : "jakarta.enterprise.event.Observes",
+    "simpleName" : "Observes",
+    "packageName" : "jakarta.enterprise.event",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.enterprise.event.Reception",
+    "fullName" : "jakarta.enterprise.event.Reception",
+    "simpleName" : "Reception",
+    "packageName" : "jakarta.enterprise.event",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.enterprise.context.RequestScoped",
+    "fullName" : "jakarta.enterprise.context.RequestScoped",
+    "simpleName" : "RequestScoped",
+    "packageName" : "jakarta.enterprise.context",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository",
+    "simpleName" : "MemberRepository",
+    "packageName" : "org.jboss.as.quickstarts.kitchensink.data",
+    "unused" : false,
+    "framework" : true,
+    "test" : false,
+    "dependsOn" : [ {
+      "target" : "jakarta.persistence.TypedQuery",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.enterprise.context.ApplicationScoped",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.util.List",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.persistence.criteria.Root",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.persistence.criteria.CriteriaQuery",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.persistence.criteria.AbstractQuery",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.Long",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.persistence.criteria.CriteriaBuilder",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.persistence.EntityManager",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.String",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.inject.Inject",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.persistence.criteria.Path",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+      "type" : "REFERENCE"
+    } ],
+    "usedImports" : [ {
+      "name" : "jakarta.persistence.TypedQuery",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.enterprise.context.ApplicationScoped",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.util.List",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.persistence.criteria.CriteriaQuery",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.persistence.criteria.Root",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.persistence.criteria.AbstractQuery",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.Long",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.persistence.criteria.CriteriaBuilder",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.persistence.EntityManager",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.String",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.inject.Inject",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.persistence.criteria.Path",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+      "type" : "IMPORT"
+    } ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.persistence.criteria.Root",
+    "fullName" : "jakarta.persistence.criteria.Root",
+    "simpleName" : "Root",
+    "packageName" : "jakarta.persistence.criteria",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.persistence.criteria.CriteriaQuery",
+    "fullName" : "jakarta.persistence.criteria.CriteriaQuery",
+    "simpleName" : "CriteriaQuery",
+    "packageName" : "jakarta.persistence.criteria",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.persistence.criteria.CriteriaBuilder",
+    "fullName" : "jakarta.persistence.criteria.CriteriaBuilder",
+    "simpleName" : "CriteriaBuilder",
+    "packageName" : "jakarta.persistence.criteria",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.enterprise.context.ApplicationScoped",
+    "fullName" : "jakarta.enterprise.context.ApplicationScoped",
+    "simpleName" : "ApplicationScoped",
+    "packageName" : "jakarta.enterprise.context",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.persistence.criteria.AbstractQuery",
+    "fullName" : "jakarta.persistence.criteria.AbstractQuery",
+    "simpleName" : "AbstractQuery",
+    "packageName" : "jakarta.persistence.criteria",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.persistence.criteria.Path",
+    "fullName" : "jakarta.persistence.criteria.Path",
+    "simpleName" : "Path",
+    "packageName" : "jakarta.persistence.criteria",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.persistence.TypedQuery",
+    "fullName" : "jakarta.persistence.TypedQuery",
+    "simpleName" : "TypedQuery",
+    "packageName" : "jakarta.persistence",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.as.quickstarts.kitchensink.rest.JaxRsActivator",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.rest.JaxRsActivator",
+    "simpleName" : "JaxRsActivator",
+    "packageName" : "org.jboss.as.quickstarts.kitchensink.rest",
+    "unused" : false,
+    "framework" : true,
+    "test" : false,
+    "dependsOn" : [ {
+      "target" : "jakarta.ws.rs.ApplicationPath",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.ws.rs.core.Application",
+      "type" : "REFERENCE"
+    } ],
+    "usedImports" : [ {
+      "name" : "jakarta.ws.rs.ApplicationPath",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.ws.rs.core.Application",
+      "type" : "IMPORT"
+    } ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.ws.rs.ApplicationPath",
+    "fullName" : "jakarta.ws.rs.ApplicationPath",
+    "simpleName" : "ApplicationPath",
+    "packageName" : "jakarta.ws.rs",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.ws.rs.core.Application",
+    "fullName" : "jakarta.ws.rs.core.Application",
+    "simpleName" : "Application",
+    "packageName" : "jakarta.ws.rs.core",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService",
+    "simpleName" : "MemberResourceRESTService",
+    "packageName" : "org.jboss.as.quickstarts.kitchensink.rest",
+    "unused" : false,
+    "framework" : true,
+    "test" : false,
+    "dependsOn" : [ {
+      "target" : "java.lang.Throwable",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.validation.Validator",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.util.HashMap",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.ws.rs.GET",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.ws.rs.WebApplicationException",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.ws.rs.Path",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.validation.Path",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.util.HashSet",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.ws.rs.core.Response",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.util.Map",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.ws.rs.core.Response.ResponseBuilder",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.validation.ValidationException",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.ws.rs.Produces",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.String",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.ws.rs.Consumes",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.validation.ConstraintViolation",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.ws.rs.POST",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.util.Set",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.validation.ConstraintViolationException",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.util.logging.Logger",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.Exception",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.util.List",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.ws.rs.core.MediaType",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.ws.rs.PathParam",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.persistence.NoResultException",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.inject.Inject",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.enterprise.context.RequestScoped",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+      "type" : "REFERENCE"
+    } ],
+    "usedImports" : [ {
+      "name" : "java.lang.Throwable",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.validation.Validator",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.util.HashMap",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.ws.rs.GET",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.ws.rs.WebApplicationException",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.ws.rs.Path",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.validation.Path",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.util.HashSet",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.ws.rs.core.Response",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.ws.rs.core.Response.ResponseBuilder",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.util.Map",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.validation.ValidationException",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.String",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.ws.rs.Produces",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.validation.ConstraintViolation",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.ws.rs.Consumes",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.ws.rs.POST",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.util.Set",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.validation.ConstraintViolationException",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.util.logging.Logger",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.Exception",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.util.List",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.ws.rs.core.MediaType",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.persistence.NoResultException",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.inject.Inject",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.ws.rs.PathParam",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.enterprise.context.RequestScoped",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+      "type" : "IMPORT"
+    } ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.ws.rs.Consumes",
+    "fullName" : "jakarta.ws.rs.Consumes",
+    "simpleName" : "Consumes",
+    "packageName" : "jakarta.ws.rs",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.validation.ConstraintViolation",
+    "fullName" : "jakarta.validation.ConstraintViolation",
+    "simpleName" : "ConstraintViolation",
+    "packageName" : "jakarta.validation",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.ws.rs.POST",
+    "fullName" : "jakarta.ws.rs.POST",
+    "simpleName" : "POST",
+    "packageName" : "jakarta.ws.rs",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.validation.Validator",
+    "fullName" : "jakarta.validation.Validator",
+    "simpleName" : "Validator",
+    "packageName" : "jakarta.validation",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.util.Set",
+    "fullName" : "java.util.Set",
+    "simpleName" : "Set",
+    "packageName" : "java.util",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.util.HashMap",
+    "fullName" : "java.util.HashMap",
+    "simpleName" : "HashMap",
+    "packageName" : "java.util",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.ws.rs.GET",
+    "fullName" : "jakarta.ws.rs.GET",
+    "simpleName" : "GET",
+    "packageName" : "jakarta.ws.rs",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.validation.ConstraintViolationException",
+    "fullName" : "jakarta.validation.ConstraintViolationException",
+    "simpleName" : "ConstraintViolationException",
+    "packageName" : "jakarta.validation",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.ws.rs.WebApplicationException",
+    "fullName" : "jakarta.ws.rs.WebApplicationException",
+    "simpleName" : "WebApplicationException",
+    "packageName" : "jakarta.ws.rs",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.ws.rs.Path",
+    "fullName" : "jakarta.ws.rs.Path",
+    "simpleName" : "Path",
+    "packageName" : "jakarta.ws.rs",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.util.HashSet",
+    "fullName" : "java.util.HashSet",
+    "simpleName" : "HashSet",
+    "packageName" : "java.util",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.ws.rs.core.Response",
+    "fullName" : "jakarta.ws.rs.core.Response",
+    "simpleName" : "Response",
+    "packageName" : "jakarta.ws.rs.core",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.ws.rs.core.MediaType",
+    "fullName" : "jakarta.ws.rs.core.MediaType",
+    "simpleName" : "MediaType",
+    "packageName" : "jakarta.ws.rs.core",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.util.Map",
+    "fullName" : "java.util.Map",
+    "simpleName" : "Map",
+    "packageName" : "java.util",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.validation.ValidationException",
+    "fullName" : "jakarta.validation.ValidationException",
+    "simpleName" : "ValidationException",
+    "packageName" : "jakarta.validation",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.ws.rs.Produces",
+    "fullName" : "jakarta.ws.rs.Produces",
+    "simpleName" : "Produces",
+    "packageName" : "jakarta.ws.rs",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.ws.rs.PathParam",
+    "fullName" : "jakarta.ws.rs.PathParam",
+    "simpleName" : "PathParam",
+    "packageName" : "jakarta.ws.rs",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.persistence.NoResultException",
+    "fullName" : "jakarta.persistence.NoResultException",
+    "simpleName" : "NoResultException",
+    "packageName" : "jakarta.persistence",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.ws.rs.core.Response.ResponseBuilder",
+    "fullName" : "jakarta.ws.rs.core.Response.ResponseBuilder",
+    "simpleName" : "ResponseBuilder",
+    "packageName" : "jakarta.ws.rs.core.Response",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.validation.Path",
+    "fullName" : "jakarta.validation.Path",
+    "simpleName" : "Path",
+    "packageName" : "jakarta.validation",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT",
+    "simpleName" : "RemoteMemberRegistrationIT",
+    "packageName" : "org.jboss.as.quickstarts.kitchensink.test",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ {
+      "target" : "java.net.http.HttpResponse.BodyHandlers",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.System",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.net.URISyntaxException",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.net.http.HttpRequest.BodyPublishers",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.junit.Test",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.RuntimeException",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.util.logging.Logger",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.Exception",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.net.http.HttpRequest",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.json.Json",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.net.http.HttpRequest.Builder",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.json.JsonObjectBuilder",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.json.JsonObject",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.net.http.HttpClient",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.Class",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.Object",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.net.URI",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.String",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.junit.Assert",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.net.http.HttpResponse",
+      "type" : "REFERENCE"
+    } ],
+    "usedImports" : [ {
+      "name" : "java.net.http.HttpResponse.BodyHandlers",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.System",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.net.URISyntaxException",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.net.http.HttpRequest.BodyPublishers",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.junit.Test",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.RuntimeException",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.util.logging.Logger",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.Exception",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.net.http.HttpRequest",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.json.Json",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.net.http.HttpRequest.Builder",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.json.JsonObjectBuilder",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.json.JsonObject",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.Class",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.Object",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.net.http.HttpClient",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.net.URI",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.String",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.junit.Assert",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.net.http.HttpResponse",
+      "type" : "IMPORT"
+    } ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.net.URISyntaxException",
+    "fullName" : "java.net.URISyntaxException",
+    "simpleName" : "URISyntaxException",
+    "packageName" : "java.net",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.json.JsonObject",
+    "fullName" : "jakarta.json.JsonObject",
+    "simpleName" : "JsonObject",
+    "packageName" : "jakarta.json",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.junit.Test",
+    "fullName" : "org.junit.Test",
+    "simpleName" : "Test",
+    "packageName" : "org.junit",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.net.http.HttpClient",
+    "fullName" : "java.net.http.HttpClient",
+    "simpleName" : "HttpClient",
+    "packageName" : "java.net.http",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.net.URI",
+    "fullName" : "java.net.URI",
+    "simpleName" : "URI",
+    "packageName" : "java.net",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.junit.Assert",
+    "fullName" : "org.junit.Assert",
+    "simpleName" : "Assert",
+    "packageName" : "org.junit",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.net.http.HttpResponse",
+    "fullName" : "java.net.http.HttpResponse",
+    "simpleName" : "HttpResponse",
+    "packageName" : "java.net.http",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.net.http.HttpRequest",
+    "fullName" : "java.net.http.HttpRequest",
+    "simpleName" : "HttpRequest",
+    "packageName" : "java.net.http",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.json.Json",
+    "fullName" : "jakarta.json.Json",
+    "simpleName" : "Json",
+    "packageName" : "jakarta.json",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.lang.RuntimeException",
+    "fullName" : "java.lang.RuntimeException",
+    "simpleName" : "RuntimeException",
+    "packageName" : "java.lang",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.lang.System",
+    "fullName" : "java.lang.System",
+    "simpleName" : "System",
+    "packageName" : "java.lang",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "jakarta.json.JsonObjectBuilder",
+    "fullName" : "jakarta.json.JsonObjectBuilder",
+    "simpleName" : "JsonObjectBuilder",
+    "packageName" : "jakarta.json",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.net.http.HttpRequest.Builder",
+    "fullName" : "java.net.http.HttpRequest.Builder",
+    "simpleName" : "Builder",
+    "packageName" : "java.net.http.HttpRequest",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.net.http.HttpRequest.BodyPublishers",
+    "fullName" : "java.net.http.HttpRequest.BodyPublishers",
+    "simpleName" : "BodyPublishers",
+    "packageName" : "java.net.http.HttpRequest",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.lang.Object",
+    "fullName" : "java.lang.Object",
+    "simpleName" : "Object",
+    "packageName" : "java.lang",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "java.net.http.HttpResponse.BodyHandlers",
+    "fullName" : "java.net.http.HttpResponse.BodyHandlers",
+    "simpleName" : "BodyHandlers",
+    "packageName" : "java.net.http.HttpResponse",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT",
+    "simpleName" : "MemberRegistrationIT",
+    "packageName" : "org.jboss.as.quickstarts.kitchensink.test",
+    "unused" : false,
+    "framework" : true,
+    "test" : true,
+    "dependsOn" : [ {
+      "target" : "org.jboss.shrinkwrap.api.spec.WebArchive",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.shrinkwrap.api.ShrinkWrap",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.arquillian.junit.Arquillian",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.junit.Assert.assertNotNull",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.junit.runner.RunWith",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.junit.Test",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.shrinkwrap.api.Archive",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.util.logging.Logger",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.shrinkwrap.api.asset.StringAsset",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "java.lang.Exception",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.shrinkwrap.api.container.ClassContainer",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.as.quickstarts.kitchensink.util.Resources",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.shrinkwrap.api.container.WebContainer",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.arquillian.container.test.api.Deployment",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "jakarta.inject.Inject",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.junit.Assert",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.shrinkwrap.api.container.ResourceContainer",
+      "type" : "REFERENCE"
+    }, {
+      "target" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+      "type" : "REFERENCE"
+    } ],
+    "usedImports" : [ {
+      "name" : "org.jboss.shrinkwrap.api.spec.WebArchive",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.shrinkwrap.api.ShrinkWrap",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.arquillian.junit.Arquillian",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.junit.Assert.assertNotNull",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.junit.runner.RunWith",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.junit.Test",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.shrinkwrap.api.Archive",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.util.logging.Logger",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.shrinkwrap.api.asset.StringAsset",
+      "type" : "IMPORT"
+    }, {
+      "name" : "java.lang.Exception",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.shrinkwrap.api.container.ClassContainer",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.util.Resources",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.shrinkwrap.api.container.WebContainer",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.arquillian.container.test.api.Deployment",
+      "type" : "IMPORT"
+    }, {
+      "name" : "jakarta.inject.Inject",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.junit.Assert",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.shrinkwrap.api.container.ResourceContainer",
+      "type" : "IMPORT"
+    }, {
+      "name" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+      "type" : "IMPORT"
+    } ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.shrinkwrap.api.spec.WebArchive",
+    "fullName" : "org.jboss.shrinkwrap.api.spec.WebArchive",
+    "simpleName" : "WebArchive",
+    "packageName" : "org.jboss.shrinkwrap.api.spec",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.shrinkwrap.api.ShrinkWrap",
+    "fullName" : "org.jboss.shrinkwrap.api.ShrinkWrap",
+    "simpleName" : "ShrinkWrap",
+    "packageName" : "org.jboss.shrinkwrap.api",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.arquillian.junit.Arquillian",
+    "fullName" : "org.jboss.arquillian.junit.Arquillian",
+    "simpleName" : "Arquillian",
+    "packageName" : "org.jboss.arquillian.junit",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.junit.Assert.assertNotNull",
+    "fullName" : "org.junit.Assert.assertNotNull",
+    "simpleName" : "assertNotNull",
+    "packageName" : "org.junit.Assert",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.junit.runner.RunWith",
+    "fullName" : "org.junit.runner.RunWith",
+    "simpleName" : "RunWith",
+    "packageName" : "org.junit.runner",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.shrinkwrap.api.Archive",
+    "fullName" : "org.jboss.shrinkwrap.api.Archive",
+    "simpleName" : "Archive",
+    "packageName" : "org.jboss.shrinkwrap.api",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.shrinkwrap.api.asset.StringAsset",
+    "fullName" : "org.jboss.shrinkwrap.api.asset.StringAsset",
+    "simpleName" : "StringAsset",
+    "packageName" : "org.jboss.shrinkwrap.api.asset",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.arquillian.container.test.api.Deployment",
+    "fullName" : "org.jboss.arquillian.container.test.api.Deployment",
+    "simpleName" : "Deployment",
+    "packageName" : "org.jboss.arquillian.container.test.api",
+    "unused" : false,
+    "framework" : false,
+    "test" : false,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.shrinkwrap.api.container.WebContainer",
+    "fullName" : "org.jboss.shrinkwrap.api.container.WebContainer",
+    "simpleName" : "WebContainer",
+    "packageName" : "org.jboss.shrinkwrap.api.container",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.shrinkwrap.api.container.ResourceContainer",
+    "fullName" : "org.jboss.shrinkwrap.api.container.ResourceContainer",
+    "simpleName" : "ResourceContainer",
+    "packageName" : "org.jboss.shrinkwrap.api.container",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  }, {
+    "id" : "org.jboss.shrinkwrap.api.container.ClassContainer",
+    "fullName" : "org.jboss.shrinkwrap.api.container.ClassContainer",
+    "simpleName" : "ClassContainer",
+    "packageName" : "org.jboss.shrinkwrap.api.container",
+    "unused" : false,
+    "framework" : false,
+    "test" : true,
+    "dependsOn" : [ ],
+    "usedImports" : [ ],
+    "unusedImports" : [ ]
+  } ],
+  "methods" : [ {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService",
+    "name" : "listAllMembers",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.listAllMembers",
+    "called" : false,
+    "framework" : true,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName" ]
+  }, {
+    "declaringClass" : "jakarta.persistence.EntityManager",
+    "name" : "getCriteriaBuilder",
+    "fullName" : "jakarta.persistence.EntityManager.getCriteriaBuilder",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT",
+    "name" : "getServerHost",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getServerHost",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ "java.lang.System.getProperty", "java.lang.System.getenv" ]
+  }, {
+    "declaringClass" : "jakarta.validation.ConstraintViolationException",
+    "name" : "getConstraintViolations",
+    "fullName" : "jakarta.validation.ConstraintViolationException.getConstraintViolations",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.ws.rs.core.Response",
+    "name" : "status",
+    "fullName" : "jakarta.ws.rs.core.Response.status",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService",
+    "name" : "lookupMemberById",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.lookupMemberById",
+    "called" : false,
+    "framework" : true,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findById" ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService",
+    "name" : "createViolationResponse",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ "jakarta.validation.ConstraintViolation.getPropertyPath", "java.util.Map.put", "jakarta.ws.rs.core.Response.status", "jakarta.validation.Path.toString", "java.util.Set.size", "jakarta.ws.rs.core.Response.ResponseBuilder.entity", "jakarta.validation.ConstraintViolation.getMessage", "java.util.logging.Logger.fine" ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService",
+    "name" : "emailAlreadyExists",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.emailAlreadyExists",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail" ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+    "name" : "getPhoneNumber",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.model.Member.getPhoneNumber",
+    "called" : false,
+    "framework" : false,
+    "test" : false,
+    "unused" : true,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository",
+    "name" : "findByEmail",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ "jakarta.persistence.EntityManager.getCriteriaBuilder", "jakarta.persistence.criteria.CriteriaQuery.select", "jakarta.persistence.criteria.CriteriaBuilder.createQuery", "jakarta.persistence.EntityManager.createQuery", "jakarta.persistence.criteria.CriteriaQuery.where", "jakarta.persistence.criteria.Path.get", "jakarta.persistence.TypedQuery.getSingleResult", "jakarta.persistence.criteria.AbstractQuery.from", "jakarta.persistence.criteria.CriteriaBuilder.equal" ]
+  }, {
+    "declaringClass" : "jakarta.enterprise.event.Event",
+    "name" : "fire",
+    "fullName" : "jakarta.enterprise.event.Event.fire",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController",
+    "name" : "register",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController.register",
+    "called" : false,
+    "framework" : true,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController.initNewMember", "org.jboss.as.quickstarts.kitchensink.controller.MemberController.getRootErrorMessage", "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration.register", "jakarta.faces.context.FacesContext.addMessage" ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+    "name" : "setId",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.model.Member.setId",
+    "called" : false,
+    "framework" : false,
+    "test" : false,
+    "unused" : true,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.faces.context.FacesContext",
+    "name" : "addMessage",
+    "fullName" : "jakarta.faces.context.FacesContext.addMessage",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.json.JsonObjectBuilder",
+    "name" : "add",
+    "fullName" : "jakarta.json.JsonObjectBuilder.add",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer",
+    "name" : "onMemberListChanged",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.onMemberListChanged",
+    "called" : false,
+    "framework" : true,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.retrieveAllMembersOrderedByName" ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+    "name" : "setEmail",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.model.Member.setEmail",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT",
+    "name" : "getHTTPEndpoint",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getHTTPEndpoint",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getServerHost" ]
+  }, {
+    "declaringClass" : "java.net.http.HttpRequest.BodyPublishers",
+    "name" : "ofString",
+    "fullName" : "java.net.http.HttpRequest.BodyPublishers.ofString",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.validation.Validator",
+    "name" : "validate",
+    "fullName" : "jakarta.validation.Validator.validate",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.validation.Path",
+    "name" : "toString",
+    "fullName" : "jakarta.validation.Path.toString",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.shrinkwrap.api.container.ClassContainer",
+    "name" : "addClasses",
+    "fullName" : "org.jboss.shrinkwrap.api.container.ClassContainer.addClasses",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.lang.System",
+    "name" : "getProperty",
+    "fullName" : "java.lang.System.getProperty",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.persistence.EntityManager",
+    "name" : "find",
+    "fullName" : "jakarta.persistence.EntityManager.find",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.json.JsonObjectBuilder",
+    "name" : "build",
+    "fullName" : "jakarta.json.JsonObjectBuilder.build",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+    "name" : "getEmail",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.model.Member.getEmail",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.net.http.HttpResponse",
+    "name" : "statusCode",
+    "fullName" : "java.net.http.HttpResponse.statusCode",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.util.logging.Logger",
+    "name" : "info",
+    "fullName" : "java.util.logging.Logger.info",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+    "name" : "getName",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.model.Member.getName",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.persistence.criteria.CriteriaBuilder",
+    "name" : "equal",
+    "fullName" : "jakarta.persistence.criteria.CriteriaBuilder.equal",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.net.http.HttpClient",
+    "name" : "send",
+    "fullName" : "java.net.http.HttpClient.send",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository",
+    "name" : "findById",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findById",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ "jakarta.persistence.EntityManager.find" ]
+  }, {
+    "declaringClass" : "java.util.Map",
+    "name" : "put",
+    "fullName" : "java.util.Map.put",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.validation.ConstraintViolation",
+    "name" : "getPropertyPath",
+    "fullName" : "jakarta.validation.ConstraintViolation.getPropertyPath",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.lang.Throwable",
+    "name" : "getLocalizedMessage",
+    "fullName" : "java.lang.Throwable.getLocalizedMessage",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService",
+    "name" : "validateMember",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ "jakarta.validation.Validator.validate", "java.util.Set.isEmpty", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.emailAlreadyExists", "org.jboss.as.quickstarts.kitchensink.model.Member.getEmail" ]
+  }, {
+    "declaringClass" : "jakarta.persistence.EntityManager",
+    "name" : "persist",
+    "fullName" : "jakarta.persistence.EntityManager.persist",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+    "name" : "setPhoneNumber",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.model.Member.setPhoneNumber",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.util.logging.Logger",
+    "name" : "getLogger",
+    "fullName" : "java.util.logging.Logger.getLogger",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+    "name" : "getId",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.model.Member.getId",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.shrinkwrap.api.container.ResourceContainer",
+    "name" : "addAsResource",
+    "fullName" : "org.jboss.shrinkwrap.api.container.ResourceContainer.addAsResource",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.persistence.criteria.CriteriaBuilder",
+    "name" : "asc",
+    "fullName" : "jakarta.persistence.criteria.CriteriaBuilder.asc",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.util.Set",
+    "name" : "size",
+    "fullName" : "java.util.Set.size",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT",
+    "name" : "testRegister",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+    "called" : false,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ "java.net.http.HttpClient.send", "java.net.http.HttpResponse.body", "java.net.http.HttpRequest.Builder.POST", "org.jboss.as.quickstarts.kitchensink.model.Member.setPhoneNumber", "java.net.http.HttpRequest.newBuilder", "jakarta.json.JsonObjectBuilder.add", "java.net.http.HttpRequest.Builder.build", "org.jboss.as.quickstarts.kitchensink.model.Member.setEmail", "java.net.http.HttpRequest.BodyPublishers.ofString", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getHTTPEndpoint", "java.net.http.HttpRequest.Builder.header", "org.jboss.as.quickstarts.kitchensink.model.Member.setName", "jakarta.json.JsonObjectBuilder.build", "java.net.http.HttpClient.newHttpClient", "java.lang.Object.toString", "java.net.http.HttpResponse.statusCode", "java.net.http.HttpResponse.BodyHandlers.ofString", "org.junit.Assert.assertEquals", "jakarta.json.Json.createObjectBuilder" ]
+  }, {
+    "declaringClass" : "jakarta.ws.rs.core.Response.ResponseBuilder",
+    "name" : "entity",
+    "fullName" : "jakarta.ws.rs.core.Response.ResponseBuilder.entity",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.lang.System",
+    "name" : "getenv",
+    "fullName" : "java.lang.System.getenv",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.shrinkwrap.api.ShrinkWrap",
+    "name" : "create",
+    "fullName" : "org.jboss.shrinkwrap.api.ShrinkWrap.create",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT",
+    "name" : "createTestArchive",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.createTestArchive",
+    "called" : false,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ "org.jboss.shrinkwrap.api.container.ResourceContainer.addAsResource", "org.jboss.shrinkwrap.api.container.ClassContainer.addClasses", "org.jboss.shrinkwrap.api.container.WebContainer.addAsWebInfResource", "org.jboss.shrinkwrap.api.ShrinkWrap.create" ]
+  }, {
+    "declaringClass" : "java.lang.Throwable",
+    "name" : "getCause",
+    "fullName" : "java.lang.Throwable.getCause",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.lang.reflect.Member",
+    "name" : "getDeclaringClass",
+    "fullName" : "java.lang.reflect.Member.getDeclaringClass",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.json.Json",
+    "name" : "createObjectBuilder",
+    "fullName" : "jakarta.json.Json.createObjectBuilder",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.lang.Class",
+    "name" : "getName",
+    "fullName" : "java.lang.Class.getName",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer",
+    "name" : "retrieveAllMembersOrderedByName",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.retrieveAllMembersOrderedByName",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName" ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService",
+    "name" : "createMember",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember",
+    "called" : false,
+    "framework" : true,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ "java.util.Map.put", "jakarta.validation.ConstraintViolationException.getConstraintViolations", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember", "jakarta.ws.rs.core.Response.status", "jakarta.ws.rs.core.Response.ResponseBuilder.entity", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse", "java.lang.Throwable.getMessage", "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration.register", "jakarta.ws.rs.core.Response.ok", "jakarta.ws.rs.core.Response.ResponseBuilder.build" ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController",
+    "name" : "initNewMember",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController.initNewMember",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT",
+    "name" : "testRegister",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister",
+    "called" : false,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ "org.jboss.as.quickstarts.kitchensink.model.Member.getId", "org.jboss.as.quickstarts.kitchensink.model.Member.setEmail", "org.jboss.as.quickstarts.kitchensink.model.Member.setName", "org.junit.Assert.assertNotNull", "org.jboss.as.quickstarts.kitchensink.model.Member.setPhoneNumber", "java.util.logging.Logger.info", "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration.register", "org.jboss.as.quickstarts.kitchensink.model.Member.getName" ]
+  }, {
+    "declaringClass" : "jakarta.persistence.criteria.CriteriaQuery",
+    "name" : "orderBy",
+    "fullName" : "jakarta.persistence.criteria.CriteriaQuery.orderBy",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.persistence.criteria.CriteriaQuery",
+    "name" : "where",
+    "fullName" : "jakarta.persistence.criteria.CriteriaQuery.where",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer",
+    "name" : "getMembers",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.getMembers",
+    "called" : false,
+    "framework" : true,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.persistence.criteria.Path",
+    "name" : "get",
+    "fullName" : "jakarta.persistence.criteria.Path.get",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController",
+    "name" : "getRootErrorMessage",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController.getRootErrorMessage",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ "java.lang.Throwable.getLocalizedMessage", "java.lang.Throwable.getCause" ]
+  }, {
+    "declaringClass" : "jakarta.persistence.TypedQuery",
+    "name" : "getResultList",
+    "fullName" : "jakarta.persistence.TypedQuery.getResultList",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.net.http.HttpRequest.Builder",
+    "name" : "header",
+    "fullName" : "java.net.http.HttpRequest.Builder.header",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.persistence.EntityManager",
+    "name" : "createQuery",
+    "fullName" : "jakarta.persistence.EntityManager.createQuery",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.validation.ConstraintViolation",
+    "name" : "getMessage",
+    "fullName" : "jakarta.validation.ConstraintViolation.getMessage",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.shrinkwrap.api.container.WebContainer",
+    "name" : "addAsWebInfResource",
+    "fullName" : "org.jboss.shrinkwrap.api.container.WebContainer.addAsWebInfResource",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.net.http.HttpClient",
+    "name" : "newHttpClient",
+    "fullName" : "java.net.http.HttpClient.newHttpClient",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.lang.Object",
+    "name" : "toString",
+    "fullName" : "java.lang.Object.toString",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.net.http.HttpResponse.BodyHandlers",
+    "name" : "ofString",
+    "fullName" : "java.net.http.HttpResponse.BodyHandlers.ofString",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.persistence.criteria.CriteriaQuery",
+    "name" : "select",
+    "fullName" : "jakarta.persistence.criteria.CriteriaQuery.select",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository",
+    "name" : "findAllOrderedByName",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ "jakarta.persistence.EntityManager.getCriteriaBuilder", "jakarta.persistence.criteria.CriteriaQuery.select", "jakarta.persistence.criteria.CriteriaBuilder.createQuery", "jakarta.persistence.criteria.CriteriaBuilder.asc", "jakarta.persistence.EntityManager.createQuery", "jakarta.persistence.criteria.CriteriaQuery.orderBy", "jakarta.persistence.criteria.Path.get", "jakarta.persistence.criteria.AbstractQuery.from", "jakarta.persistence.TypedQuery.getResultList" ]
+  }, {
+    "declaringClass" : "org.junit.Assert",
+    "name" : "assertNotNull",
+    "fullName" : "org.junit.Assert.assertNotNull",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.util.Resources",
+    "name" : "produceLog",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.util.Resources.produceLog",
+    "called" : false,
+    "framework" : true,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ "java.lang.Class.getName", "jakarta.enterprise.inject.spi.InjectionPoint.getMember", "java.util.logging.Logger.getLogger", "java.lang.reflect.Member.getDeclaringClass" ]
+  }, {
+    "declaringClass" : "java.net.http.HttpResponse",
+    "name" : "body",
+    "fullName" : "java.net.http.HttpResponse.body",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.net.http.HttpRequest.Builder",
+    "name" : "POST",
+    "fullName" : "java.net.http.HttpRequest.Builder.POST",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.util.logging.Logger",
+    "name" : "fine",
+    "fullName" : "java.util.logging.Logger.fine",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration",
+    "name" : "register",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration.register",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ "jakarta.persistence.EntityManager.persist", "jakarta.enterprise.event.Event.fire", "java.util.logging.Logger.info", "org.jboss.as.quickstarts.kitchensink.model.Member.getName" ]
+  }, {
+    "declaringClass" : "java.net.http.HttpRequest",
+    "name" : "newBuilder",
+    "fullName" : "java.net.http.HttpRequest.newBuilder",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.ws.rs.core.Response",
+    "name" : "ok",
+    "fullName" : "jakarta.ws.rs.core.Response.ok",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.persistence.criteria.AbstractQuery",
+    "name" : "from",
+    "fullName" : "jakarta.persistence.criteria.AbstractQuery.from",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.net.http.HttpRequest.Builder",
+    "name" : "build",
+    "fullName" : "java.net.http.HttpRequest.Builder.build",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.enterprise.inject.spi.InjectionPoint",
+    "name" : "getMember",
+    "fullName" : "jakarta.enterprise.inject.spi.InjectionPoint.getMember",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.persistence.criteria.CriteriaBuilder",
+    "name" : "createQuery",
+    "fullName" : "jakarta.persistence.criteria.CriteriaBuilder.createQuery",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+    "name" : "setName",
+    "fullName" : "org.jboss.as.quickstarts.kitchensink.model.Member.setName",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.util.Set",
+    "name" : "isEmpty",
+    "fullName" : "java.util.Set.isEmpty",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "java.lang.Throwable",
+    "name" : "getMessage",
+    "fullName" : "java.lang.Throwable.getMessage",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.persistence.TypedQuery",
+    "name" : "getSingleResult",
+    "fullName" : "jakarta.persistence.TypedQuery.getSingleResult",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "org.junit.Assert",
+    "name" : "assertEquals",
+    "fullName" : "org.junit.Assert.assertEquals",
+    "called" : true,
+    "framework" : false,
+    "test" : true,
+    "unused" : false,
+    "calls" : [ ]
+  }, {
+    "declaringClass" : "jakarta.ws.rs.core.Response.ResponseBuilder",
+    "name" : "build",
+    "fullName" : "jakarta.ws.rs.core.Response.ResponseBuilder.build",
+    "called" : true,
+    "framework" : false,
+    "test" : false,
+    "unused" : false,
+    "calls" : [ ]
+  } ],
+  "callGraph" : {
+    "nodes" : [ {
+      "id" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.listAllMembers",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.persistence.EntityManager.getCriteriaBuilder",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getServerHost",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.validation.ConstraintViolationException.getConstraintViolations",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.ws.rs.core.Response.status",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.lookupMemberById",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.emailAlreadyExists",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.model.Member.getPhoneNumber",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.enterprise.event.Event.fire",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController.register",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.model.Member.setId",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.faces.context.FacesContext.addMessage",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.json.JsonObjectBuilder.add",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.onMemberListChanged",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.model.Member.setEmail",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getHTTPEndpoint",
+      "type" : "method"
+    }, {
+      "id" : "java.net.http.HttpRequest.BodyPublishers.ofString",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.validation.Validator.validate",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.validation.Path.toString",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.shrinkwrap.api.container.ClassContainer.addClasses",
+      "type" : "method"
+    }, {
+      "id" : "java.lang.System.getProperty",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.persistence.EntityManager.find",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.json.JsonObjectBuilder.build",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.model.Member.getEmail",
+      "type" : "method"
+    }, {
+      "id" : "java.net.http.HttpResponse.statusCode",
+      "type" : "method"
+    }, {
+      "id" : "java.util.logging.Logger.info",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.model.Member.getName",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.persistence.criteria.CriteriaBuilder.equal",
+      "type" : "method"
+    }, {
+      "id" : "java.net.http.HttpClient.send",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findById",
+      "type" : "method"
+    }, {
+      "id" : "java.util.Map.put",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.validation.ConstraintViolation.getPropertyPath",
+      "type" : "method"
+    }, {
+      "id" : "java.lang.Throwable.getLocalizedMessage",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.persistence.EntityManager.persist",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.model.Member.setPhoneNumber",
+      "type" : "method"
+    }, {
+      "id" : "java.util.logging.Logger.getLogger",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.model.Member.getId",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.shrinkwrap.api.container.ResourceContainer.addAsResource",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.persistence.criteria.CriteriaBuilder.asc",
+      "type" : "method"
+    }, {
+      "id" : "java.util.Set.size",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.ws.rs.core.Response.ResponseBuilder.entity",
+      "type" : "method"
+    }, {
+      "id" : "java.lang.System.getenv",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.shrinkwrap.api.ShrinkWrap.create",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.createTestArchive",
+      "type" : "method"
+    }, {
+      "id" : "java.lang.Throwable.getCause",
+      "type" : "method"
+    }, {
+      "id" : "java.lang.reflect.Member.getDeclaringClass",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.json.Json.createObjectBuilder",
+      "type" : "method"
+    }, {
+      "id" : "java.lang.Class.getName",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.retrieveAllMembersOrderedByName",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController.initNewMember",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.persistence.criteria.CriteriaQuery.orderBy",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.persistence.criteria.CriteriaQuery.where",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.getMembers",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.persistence.criteria.Path.get",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController.getRootErrorMessage",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.persistence.TypedQuery.getResultList",
+      "type" : "method"
+    }, {
+      "id" : "java.net.http.HttpRequest.Builder.header",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.persistence.EntityManager.createQuery",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.validation.ConstraintViolation.getMessage",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.shrinkwrap.api.container.WebContainer.addAsWebInfResource",
+      "type" : "method"
+    }, {
+      "id" : "java.net.http.HttpClient.newHttpClient",
+      "type" : "method"
+    }, {
+      "id" : "java.lang.Object.toString",
+      "type" : "method"
+    }, {
+      "id" : "java.net.http.HttpResponse.BodyHandlers.ofString",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.persistence.criteria.CriteriaQuery.select",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName",
+      "type" : "method"
+    }, {
+      "id" : "org.junit.Assert.assertNotNull",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.util.Resources.produceLog",
+      "type" : "method"
+    }, {
+      "id" : "java.net.http.HttpResponse.body",
+      "type" : "method"
+    }, {
+      "id" : "java.net.http.HttpRequest.Builder.POST",
+      "type" : "method"
+    }, {
+      "id" : "java.util.logging.Logger.fine",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration.register",
+      "type" : "method"
+    }, {
+      "id" : "java.net.http.HttpRequest.newBuilder",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.ws.rs.core.Response.ok",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.persistence.criteria.AbstractQuery.from",
+      "type" : "method"
+    }, {
+      "id" : "java.net.http.HttpRequest.Builder.build",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.enterprise.inject.spi.InjectionPoint.getMember",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.persistence.criteria.CriteriaBuilder.createQuery",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.model.Member.setName",
+      "type" : "method"
+    }, {
+      "id" : "java.util.Set.isEmpty",
+      "type" : "method"
+    }, {
+      "id" : "java.lang.Throwable.getMessage",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.persistence.TypedQuery.getSingleResult",
+      "type" : "method"
+    }, {
+      "id" : "org.junit.Assert.assertEquals",
+      "type" : "method"
+    }, {
+      "id" : "jakarta.ws.rs.core.Response.ResponseBuilder.build",
+      "type" : "method"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.(field initializer or unknown method)",
+      "type" : "method"
+    } ],
+    "edges" : [ {
+      "from" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController.getRootErrorMessage",
+      "to" : "java.lang.Throwable.getLocalizedMessage"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController.getRootErrorMessage",
+      "to" : "java.lang.Throwable.getCause"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController.register",
+      "to" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController.initNewMember"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController.register",
+      "to" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController.getRootErrorMessage"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController.register",
+      "to" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration.register"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController.register",
+      "to" : "jakarta.faces.context.FacesContext.addMessage"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.onMemberListChanged",
+      "to" : "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.retrieveAllMembersOrderedByName"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.retrieveAllMembersOrderedByName",
+      "to" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName",
+      "to" : "jakarta.persistence.EntityManager.getCriteriaBuilder"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName",
+      "to" : "jakarta.persistence.criteria.CriteriaQuery.select"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName",
+      "to" : "jakarta.persistence.criteria.CriteriaBuilder.createQuery"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName",
+      "to" : "jakarta.persistence.criteria.CriteriaBuilder.asc"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName",
+      "to" : "jakarta.persistence.EntityManager.createQuery"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName",
+      "to" : "jakarta.persistence.criteria.CriteriaQuery.orderBy"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName",
+      "to" : "jakarta.persistence.criteria.Path.get"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName",
+      "to" : "jakarta.persistence.criteria.AbstractQuery.from"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName",
+      "to" : "jakarta.persistence.TypedQuery.getResultList"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail",
+      "to" : "jakarta.persistence.EntityManager.getCriteriaBuilder"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail",
+      "to" : "jakarta.persistence.criteria.CriteriaQuery.select"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail",
+      "to" : "jakarta.persistence.criteria.CriteriaBuilder.createQuery"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail",
+      "to" : "jakarta.persistence.EntityManager.createQuery"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail",
+      "to" : "jakarta.persistence.criteria.CriteriaQuery.where"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail",
+      "to" : "jakarta.persistence.criteria.Path.get"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail",
+      "to" : "jakarta.persistence.TypedQuery.getSingleResult"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail",
+      "to" : "jakarta.persistence.criteria.AbstractQuery.from"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail",
+      "to" : "jakarta.persistence.criteria.CriteriaBuilder.equal"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findById",
+      "to" : "jakarta.persistence.EntityManager.find"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember",
+      "to" : "java.util.Map.put"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember",
+      "to" : "jakarta.validation.ConstraintViolationException.getConstraintViolations"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember",
+      "to" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember",
+      "to" : "jakarta.ws.rs.core.Response.status"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember",
+      "to" : "jakarta.ws.rs.core.Response.ResponseBuilder.entity"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember",
+      "to" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember",
+      "to" : "java.lang.Throwable.getMessage"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember",
+      "to" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration.register"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember",
+      "to" : "jakarta.ws.rs.core.Response.ok"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember",
+      "to" : "jakarta.ws.rs.core.Response.ResponseBuilder.build"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse",
+      "to" : "jakarta.validation.ConstraintViolation.getPropertyPath"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse",
+      "to" : "java.util.Map.put"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse",
+      "to" : "jakarta.ws.rs.core.Response.status"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse",
+      "to" : "jakarta.validation.Path.toString"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse",
+      "to" : "java.util.Set.size"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse",
+      "to" : "jakarta.ws.rs.core.Response.ResponseBuilder.entity"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse",
+      "to" : "jakarta.validation.ConstraintViolation.getMessage"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse",
+      "to" : "java.util.logging.Logger.fine"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.emailAlreadyExists",
+      "to" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.listAllMembers",
+      "to" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.lookupMemberById",
+      "to" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findById"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember",
+      "to" : "jakarta.validation.Validator.validate"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember",
+      "to" : "java.util.Set.isEmpty"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember",
+      "to" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.emailAlreadyExists"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember",
+      "to" : "org.jboss.as.quickstarts.kitchensink.model.Member.getEmail"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration.register",
+      "to" : "jakarta.persistence.EntityManager.persist"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration.register",
+      "to" : "jakarta.enterprise.event.Event.fire"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration.register",
+      "to" : "java.util.logging.Logger.info"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration.register",
+      "to" : "org.jboss.as.quickstarts.kitchensink.model.Member.getName"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.createTestArchive",
+      "to" : "org.jboss.shrinkwrap.api.container.ResourceContainer.addAsResource"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.createTestArchive",
+      "to" : "org.jboss.shrinkwrap.api.container.ClassContainer.addClasses"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.createTestArchive",
+      "to" : "org.jboss.shrinkwrap.api.container.WebContainer.addAsWebInfResource"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.createTestArchive",
+      "to" : "org.jboss.shrinkwrap.api.ShrinkWrap.create"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister",
+      "to" : "org.jboss.as.quickstarts.kitchensink.model.Member.getId"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister",
+      "to" : "org.jboss.as.quickstarts.kitchensink.model.Member.setEmail"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister",
+      "to" : "org.jboss.as.quickstarts.kitchensink.model.Member.setName"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister",
+      "to" : "org.junit.Assert.assertNotNull"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister",
+      "to" : "org.jboss.as.quickstarts.kitchensink.model.Member.setPhoneNumber"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister",
+      "to" : "java.util.logging.Logger.info"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister",
+      "to" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration.register"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister",
+      "to" : "org.jboss.as.quickstarts.kitchensink.model.Member.getName"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.(field initializer or unknown method)",
+      "to" : "java.lang.Class.getName"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.(field initializer or unknown method)",
+      "to" : "java.util.logging.Logger.getLogger"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getHTTPEndpoint",
+      "to" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getServerHost"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getServerHost",
+      "to" : "java.lang.System.getProperty"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getServerHost",
+      "to" : "java.lang.System.getenv"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "java.net.http.HttpClient.send"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "java.net.http.HttpResponse.body"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "java.net.http.HttpRequest.Builder.POST"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "org.jboss.as.quickstarts.kitchensink.model.Member.setPhoneNumber"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "java.net.http.HttpRequest.newBuilder"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "jakarta.json.JsonObjectBuilder.add"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "java.net.http.HttpRequest.Builder.build"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "org.jboss.as.quickstarts.kitchensink.model.Member.setEmail"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "java.net.http.HttpRequest.BodyPublishers.ofString"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getHTTPEndpoint"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "java.net.http.HttpRequest.Builder.header"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "org.jboss.as.quickstarts.kitchensink.model.Member.setName"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "jakarta.json.JsonObjectBuilder.build"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "java.net.http.HttpClient.newHttpClient"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "java.lang.Object.toString"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "java.net.http.HttpResponse.statusCode"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "java.net.http.HttpResponse.BodyHandlers.ofString"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "org.junit.Assert.assertEquals"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister",
+      "to" : "jakarta.json.Json.createObjectBuilder"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.util.Resources.produceLog",
+      "to" : "java.lang.Class.getName"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.util.Resources.produceLog",
+      "to" : "jakarta.enterprise.inject.spi.InjectionPoint.getMember"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.util.Resources.produceLog",
+      "to" : "java.util.logging.Logger.getLogger"
+    }, {
+      "from" : "org.jboss.as.quickstarts.kitchensink.util.Resources.produceLog",
+      "to" : "java.lang.reflect.Member.getDeclaringClass"
+    } ]
+  },
+  "unusedCode" : {
+    "classes" : [ ],
+    "methods" : [ {
+      "id" : "org.jboss.as.quickstarts.kitchensink.model.Member.getPhoneNumber",
+      "className" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+      "methodName" : "getPhoneNumber",
+      "reason" : "No other classes depends on this class"
+    }, {
+      "id" : "org.jboss.as.quickstarts.kitchensink.model.Member.setId",
+      "className" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+      "methodName" : "setId",
+      "reason" : "No other classes depends on this class"
+    } ]
+  },
+  "impactAnalysis" : [ {
+    "class" : "org.jboss.as.quickstarts.kitchensink.util.Resources",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.persistence.EntityManager",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.util.Resources", "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 7,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "jakarta.enterprise.inject.spi.InjectionPoint",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.util.Resources" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.util.logging.Logger",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.util.Resources", "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 6,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "jakarta.persistence.PersistenceContext",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.util.Resources" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.enterprise.inject.Produces",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.util.Resources", "org.jboss.as.quickstarts.kitchensink.controller.MemberController", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "totalImpact" : 4,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.lang.Class",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.util.Resources", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "totalImpact" : 3,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.lang.reflect.Member",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.util.Resources" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 3,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.faces.application.FacesMessage",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.enterprise.inject.Model",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.annotation.PostConstruct",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.faces.context.FacesContext",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.inject.Inject",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController", "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 6,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "org.jboss.as.quickstarts.kitchensink.model.Member",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController", "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 7,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "jakarta.inject.Named",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.lang.Exception",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController", "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 5,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.lang.String",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController", "org.jboss.as.quickstarts.kitchensink.model.Member", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "java.lang.Throwable",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.persistence.Entity",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.model.Member" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "jakarta.validation.constraints.Pattern",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.model.Member" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "jakarta.validation.constraints.Email",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.model.Member" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "jakarta.validation.constraints.Size",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.model.Member" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "jakarta.persistence.Id",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.model.Member" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "jakarta.validation.constraints.NotNull",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.model.Member" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "jakarta.persistence.GeneratedValue",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.model.Member" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "jakarta.validation.constraints.Digits",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.model.Member" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "jakarta.persistence.Table",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.model.Member" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "java.io.Serializable",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.model.Member" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "jakarta.persistence.Column",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.model.Member" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "jakarta.persistence.UniqueConstraint",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.model.Member" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "jakarta.validation.constraints.NotEmpty",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.model.Member" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "jakarta.xml.bind.annotation.XmlRootElement",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.model.Member" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "java.lang.Long",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.model.Member", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "org.jboss.as.quickstarts.kitchensink.model.SuppressWarnings",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.model.Member" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "class" : "jakarta.enterprise.event.Event",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 4,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.ejb.Stateless",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.controller.MemberController" ],
+      "totalImpact" : 4,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.util.List",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 3,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.enterprise.event.Observes",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.enterprise.event.Reception",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.enterprise.context.RequestScoped",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.persistence.criteria.Root",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "totalImpact" : 3,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.persistence.criteria.CriteriaQuery",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "totalImpact" : 3,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.persistence.criteria.CriteriaBuilder",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "totalImpact" : 3,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.enterprise.context.ApplicationScoped",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "totalImpact" : 3,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.persistence.criteria.AbstractQuery",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "totalImpact" : 3,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.persistence.criteria.Path",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "totalImpact" : 3,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.persistence.TypedQuery",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "totalImpact" : 3,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.ws.rs.ApplicationPath",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.JaxRsActivator" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.ws.rs.core.Application",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.JaxRsActivator" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.ws.rs.Consumes",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.validation.ConstraintViolation",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.ws.rs.POST",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.validation.Validator",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.util.Set",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.util.HashMap",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.ws.rs.GET",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.validation.ConstraintViolationException",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.ws.rs.WebApplicationException",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.ws.rs.Path",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.util.HashSet",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.ws.rs.core.Response",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.ws.rs.core.MediaType",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.util.Map",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.validation.ValidationException",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.ws.rs.Produces",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.ws.rs.PathParam",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.persistence.NoResultException",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.ws.rs.core.Response.ResponseBuilder",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.validation.Path",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.net.URISyntaxException",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.json.JsonObject",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "org.junit.Test",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.net.http.HttpClient",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.net.URI",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "org.junit.Assert",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.net.http.HttpResponse",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.net.http.HttpRequest",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.json.Json",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.lang.RuntimeException",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.lang.System",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "jakarta.json.JsonObjectBuilder",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.net.http.HttpRequest.Builder",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.net.http.HttpRequest.BodyPublishers",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.lang.Object",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "java.net.http.HttpResponse.BodyHandlers",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "org.jboss.shrinkwrap.api.spec.WebArchive",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "org.jboss.shrinkwrap.api.ShrinkWrap",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "org.jboss.arquillian.junit.Arquillian",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "org.junit.Assert.assertNotNull",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "org.junit.runner.RunWith",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "org.jboss.shrinkwrap.api.Archive",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "org.jboss.shrinkwrap.api.asset.StringAsset",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "org.jboss.arquillian.container.test.api.Deployment",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "org.jboss.shrinkwrap.api.container.WebContainer",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "org.jboss.shrinkwrap.api.container.ResourceContainer",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "class" : "org.jboss.shrinkwrap.api.container.ClassContainer",
+    "type" : "class",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.persistence.EntityManager.getCriteriaBuilder",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.onMemberListChanged", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.listAllMembers", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.retrieveAllMembersOrderedByName", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.emailAlreadyExists" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getServerHost",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getHTTPEndpoint" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.validation.ConstraintViolationException.getConstraintViolations",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.ws.rs.core.Response.status",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.emailAlreadyExists",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember" ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.emailAlreadyExists" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember" ],
+      "totalImpact" : 3,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.enterprise.event.Event.fire",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration.register" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister", "org.jboss.as.quickstarts.kitchensink.controller.MemberController.register" ],
+      "totalImpact" : 4,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.faces.context.FacesContext.addMessage",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController.register" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.json.JsonObjectBuilder.add",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.model.Member.setEmail",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getHTTPEndpoint",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.net.http.HttpRequest.BodyPublishers.ofString",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.validation.Validator.validate",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember" ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.validation.Path.toString",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember" ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.shrinkwrap.api.container.ClassContainer.addClasses",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.createTestArchive" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.lang.System.getProperty",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getServerHost" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getHTTPEndpoint", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "totalImpact" : 3,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.persistence.EntityManager.find",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findById" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.lookupMemberById" ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.json.JsonObjectBuilder.build",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.model.Member.getEmail",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember" ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.net.http.HttpResponse.statusCode",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.util.logging.Logger.info",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration.register", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember", "org.jboss.as.quickstarts.kitchensink.controller.MemberController.register" ],
+      "totalImpact" : 4,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.model.Member.getName",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration.register", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember", "org.jboss.as.quickstarts.kitchensink.controller.MemberController.register" ],
+      "totalImpact" : 4,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.persistence.criteria.CriteriaBuilder.equal",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.emailAlreadyExists" ],
+      "totalImpact" : 4,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.net.http.HttpClient.send",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findById",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.lookupMemberById" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.util.Map.put",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.validation.ConstraintViolation.getPropertyPath",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember" ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.lang.Throwable.getLocalizedMessage",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController.getRootErrorMessage" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController.register" ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.persistence.EntityManager.persist",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration.register" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister", "org.jboss.as.quickstarts.kitchensink.controller.MemberController.register" ],
+      "totalImpact" : 4,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.model.Member.setPhoneNumber",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.util.logging.Logger.getLogger",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.(field initializer or unknown method)", "org.jboss.as.quickstarts.kitchensink.util.Resources.produceLog" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.model.Member.getId",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.shrinkwrap.api.container.ResourceContainer.addAsResource",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.createTestArchive" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.persistence.criteria.CriteriaBuilder.asc",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.onMemberListChanged", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.listAllMembers", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.retrieveAllMembersOrderedByName" ],
+      "totalImpact" : 4,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.util.Set.size",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember" ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.ws.rs.core.Response.ResponseBuilder.entity",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.lang.System.getenv",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getServerHost" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.getHTTPEndpoint", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "totalImpact" : 3,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.shrinkwrap.api.ShrinkWrap.create",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.createTestArchive" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.lang.Throwable.getCause",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController.getRootErrorMessage" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController.register" ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.lang.reflect.Member.getDeclaringClass",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.util.Resources.produceLog" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.json.Json.createObjectBuilder",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.lang.Class.getName",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.(field initializer or unknown method)", "org.jboss.as.quickstarts.kitchensink.util.Resources.produceLog" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.retrieveAllMembersOrderedByName",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.onMemberListChanged" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController.initNewMember",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController.register" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.persistence.criteria.CriteriaQuery.orderBy",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.onMemberListChanged", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.listAllMembers", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.retrieveAllMembersOrderedByName" ],
+      "totalImpact" : 4,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.persistence.criteria.CriteriaQuery.where",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.emailAlreadyExists" ],
+      "totalImpact" : 4,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.persistence.criteria.Path.get",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.onMemberListChanged", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.listAllMembers", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.retrieveAllMembersOrderedByName", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.emailAlreadyExists" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.controller.MemberController.getRootErrorMessage",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController.register" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.persistence.TypedQuery.getResultList",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.onMemberListChanged", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.listAllMembers", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.retrieveAllMembersOrderedByName" ],
+      "totalImpact" : 4,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.net.http.HttpRequest.Builder.header",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.persistence.EntityManager.createQuery",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.onMemberListChanged", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.listAllMembers", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.retrieveAllMembersOrderedByName", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.emailAlreadyExists" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "method" : "jakarta.validation.ConstraintViolation.getMessage",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember" ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.shrinkwrap.api.container.WebContainer.addAsWebInfResource",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.createTestArchive" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.net.http.HttpClient.newHttpClient",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.lang.Object.toString",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.net.http.HttpResponse.BodyHandlers.ofString",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.persistence.criteria.CriteriaQuery.select",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.onMemberListChanged", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.listAllMembers", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.retrieveAllMembersOrderedByName", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.emailAlreadyExists" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.retrieveAllMembersOrderedByName", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.listAllMembers" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.onMemberListChanged" ],
+      "totalImpact" : 3,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.junit.Assert.assertNotNull",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.net.http.HttpResponse.body",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.net.http.HttpRequest.Builder.POST",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.util.logging.Logger.fine",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createViolationResponse" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember" ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.service.MemberRegistration.register",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.controller.MemberController.register", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember", "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 3,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.net.http.HttpRequest.newBuilder",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.ws.rs.core.Response.ok",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.persistence.criteria.AbstractQuery.from",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.onMemberListChanged", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.listAllMembers", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.retrieveAllMembersOrderedByName", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.emailAlreadyExists" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "method" : "java.net.http.HttpRequest.Builder.build",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.enterprise.inject.spi.InjectionPoint.getMember",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.util.Resources.produceLog" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.persistence.criteria.CriteriaBuilder.createQuery",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findAllOrderedByName", "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.onMemberListChanged", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.listAllMembers", "org.jboss.as.quickstarts.kitchensink.data.MemberListProducer.retrieveAllMembersOrderedByName", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.emailAlreadyExists" ],
+      "totalImpact" : 8,
+      "severityLevel" : "MEDIUM"
+    }
+  }, {
+    "method" : "org.jboss.as.quickstarts.kitchensink.model.Member.setName",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.MemberRegistrationIT.testRegister", "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.util.Set.isEmpty",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember" ],
+      "totalImpact" : 2,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "java.lang.Throwable.getMessage",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.persistence.TypedQuery.getSingleResult",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.data.MemberRepository.findByEmail" ],
+      "indirectlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.validateMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember", "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.emailAlreadyExists" ],
+      "totalImpact" : 4,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "org.junit.Assert.assertEquals",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.test.RemoteMemberRegistrationIT.testRegister" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  }, {
+    "method" : "jakarta.ws.rs.core.Response.ResponseBuilder.build",
+    "type" : "method",
+    "impactRadius" : {
+      "directlyAffected" : [ "org.jboss.as.quickstarts.kitchensink.rest.MemberResourceRESTService.createMember" ],
+      "indirectlyAffected" : [ ],
+      "totalImpact" : 1,
+      "severityLevel" : "LOW"
+    }
+  } ]
+}
