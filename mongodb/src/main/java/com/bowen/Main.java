@@ -12,11 +12,11 @@ import java.util.List;
  * analysis and JSON export in a single execution.
  */
 public class Main {
-    
+
     public static void main(String[] args) throws Exception {
         // Parse common arguments
         String projectPath = args.length > 0 ? args[0] : "kitchensink";
-        String outputDir = args.length > 1 ? args[1] : "mongodb/frontend/public/data";
+        String outputDir = args.length > 1 ? args[1] : "frontend/public/data";
 
         File projectRoot = new File(projectPath);
         File outputDirectory = new File(outputDir);
@@ -36,17 +36,17 @@ public class Main {
         // Step 1: Run the analysis
         AnalysisService analysisService = new AnalysisService(projectRoot, sourceRoots);
         DependencyGraph graph = analysisService.analyzeProject();
-        
+
         // Print analysis report
         System.out.println("\n======= Analysis Report =======");
         analysisService.printReport();
-        
+
         // Step 3: Export to JSON
         System.out.println("\n======= Exporting Data =======");
         System.out.println("Exporting data to: " + outputDirectory.getAbsolutePath());
-        
+
         ExportTool.exportDataForFrontend(graph, analysisService, outputDirectory);
-        
+
         System.out.println("Export complete. JSON data available at: " + new File(outputDirectory, "code-data.json").getAbsolutePath());
     }
 }
